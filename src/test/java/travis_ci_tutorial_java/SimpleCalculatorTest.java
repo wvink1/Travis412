@@ -29,4 +29,15 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.multiply(3, 3), 9);
 	}
+	
+	@Test
+	public void testDivideZero() {
+		SimpleCalculator calc = new SimpleCalculator();
+		try{
+			calc.multiply(3, 0);
+			fail();
+		}catch(ArithmeticException e){
+			
+		}
+	}
 }
