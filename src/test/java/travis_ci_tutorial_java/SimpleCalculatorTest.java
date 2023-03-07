@@ -34,10 +34,10 @@ public class SimpleCalculatorTest {
 	public void testDivideZero() {
 		SimpleCalculator calc = new SimpleCalculator();
 		try{
-			calc.multiply(3, 0);
+			calc.divide(3, 0);
 			fail();
 		}catch(ArithmeticException e){
-			
+			assertEquals(1,1);
 		}
 	}
 }
